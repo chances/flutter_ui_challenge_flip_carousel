@@ -174,7 +174,7 @@ class _CardFlipperState extends State<CardFlipper> with TickerProviderStateMixin
       translation: new Offset(cardIndex - cardScrollPercent, 0.0),
       child: Padding(
         padding: const EdgeInsets.all(16.0),
-        child: return Transform(
+        child: new Transform(
           transform: _buildCardProjection(cardScrollPercent - cardIndex),
           alignment: FractionalOffset.center,
           child: new Card(
